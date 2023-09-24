@@ -1,15 +1,14 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
 :root {
   --main-color: rgba(0, 0, 40, 1);
   --title-color: rgba(219, 0, 255, 1);
-  --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --accent-color: rgba(255, 0, 112, 1);
-  --text-color: rgba(241, 178, 206, 1);
+  --font-color: rgba(241, 178, 206, 1);
+  --button-hover-color: rgba(255, 0, 112, 0.40);
   --font-family: 'IBM Plex Mono';
   --font-size: 18px;
   --padding: 20px;
   --accent-padding: 10px;
+  --title-margin: 60px;
+  --section-margin: 80px;
 }
