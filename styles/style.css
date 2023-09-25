@@ -185,7 +185,7 @@
   gap: 20px;
 }
 
-.section__container {
+.first-section__wrapper {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   max-width: calc((100% - 20px) * 2 / 3);
@@ -342,6 +342,10 @@
     max-width: 100%;
   }
 
+  .first-section__wrapper {
+    max-width: 100%;
+  }
+
   .second-section__wrapper {
     display: flex;
     flex-direction: column;
@@ -354,6 +358,10 @@
 
   .third-section {
     flex-direction: column;
+  }
+
+  .third-section__wrapper {
+    max-width: 100%;
   }
 
   .article__list {
