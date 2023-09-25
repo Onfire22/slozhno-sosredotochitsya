@@ -2,9 +2,9 @@
 
 .page {
   max-width: 1024px;
-  background: url(/images/cover-image.png) center / cover no-repeat;
+  background: url(/images/cover-image-dark.png) center / cover no-repeat;
   background-attachment: fixed;
-  background-color: var(--main-color, rgba(0, 0, 40, 1));
+  background-color: var(--background-color, rgba(0, 0, 40, 1));
   font-family: var(--font-family, 'IBM Plex Mono', sans-serif);
   color: var(--font-color, rgba(241, 178, 206, 1));
   font-size: var(--font-size, 18px);
@@ -21,6 +21,57 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   margin-bottom: 60px;
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  border-top: 1px solid var(--accent-color, rgba(255, 0, 112, 1));
+  border-right: 1px solid var(--accent-color, rgba(255, 0, 112, 1));
+  top: 20px;
+  right: 20px;
+}
+
+.decorated-zone::after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  border-bottom: 1px solid var(--accent-color, rgba(255, 0, 112, 1));
+  border-left: 1px solid var(--accent-color, rgba(255, 0, 112, 1));
+  bottom: 20px;
+  left: 20px;
+}
+
+
+.decor__element {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 28px;
+}
+
+.decor__element::before {
+  content: 'rec';
+  line-height: 25px;
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
+.decor__element::after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  background-color: var(--accent-color, rgba(255, 0, 112, 1));
+  border-radius: 50%;
+  box-shadow: 0 0 7px 2px var(--accent-color, rgba(255, 0, 112, 1));
 }
 
 /*header buttons */
@@ -70,7 +121,7 @@
 
 .title-decor {
   background-color: var(--accent-color, rgba(255, 0, 112, 1));
-  color: var(--main-color, rgba(0, 0, 40, 1));
+  color: var(--decor-color, rgba(0, 0, 40, 1));
   font-weight: 700;
 }
 
@@ -78,6 +129,10 @@
   justify-self: end;
   align-self: center;
   max-width: 50%;
+}
+
+.header__text-row {
+  display: block;
 }
 
 /* sections */
@@ -211,6 +266,7 @@
 
 .footer {
   min-height: 100vh;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;

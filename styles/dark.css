@@ -5,7 +5,8 @@
 */
 
 .page.theme_dark {
-  --main-color: rgba(0, 0, 40, 1);
+  --background-color: rgba(0, 0, 40, 1);
+  --decor-color: rgba(0, 0, 40, 1);
   --title-color: rgba(219, 0, 255, 1);
   --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --accent-color: rgba(255, 0, 112, 1);
@@ -17,7 +18,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --main-color: rgba(0, 0, 40, 1);
+    --background-color: rgba(0, 0, 40, 1);
+    --decor-color: rgba(0, 0, 40, 1);
     --title-color: rgba(219, 0, 255, 1);
     --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --accent-color: rgba(255, 0, 112, 1);
