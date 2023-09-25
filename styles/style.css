@@ -2,7 +2,7 @@
 
 .page {
   max-width: 1024px;
-  background: url(/images/cover-image-dark.png) center / cover no-repeat;
+  background: url(../images/cover-image-dark.png) center / cover no-repeat;
   background-attachment: fixed;
   background-color: var(--background-color, rgba(0, 0, 40, 1));
   font-family: var(--font-family, 'IBM Plex Mono', sans-serif);
