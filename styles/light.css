@@ -28,6 +28,16 @@
   overflow: hidden;
 }
 
+@media (width <= 767px) {
+  .page.theme_light {
+    --title-shadow-color: var(--accent-color, rgb(255, 141, 203));
+  }
+
+  .theme_auto {
+    --title-shadow-color: var(--accent-color, rgb(255, 141, 203));
+  }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --background-color: rgba(255, 241, 247, 1);
