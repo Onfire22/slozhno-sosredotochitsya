@@ -1,1 +1,1 @@
-Проектная работа 'Сложно сосредоточиться' git@github.com:Onfire22/slozhno-sosredotochitsya.git
+Проектная работа 'Сложно сосредоточиться' https://github.com/Onfire22/slozhno-sosredotochitsya.git
