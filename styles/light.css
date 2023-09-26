@@ -17,8 +17,15 @@
   background: url(../images/cover-image-light.png) center / cover no-repeat fixed;
 }
 
-.theme_light>.header>.decor__element {
-  display: none;
+.theme_light>.header>.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 @media (prefers-color-scheme: light) {
@@ -38,7 +45,14 @@
     background: url(../images/cover-image-light.png) center / cover no-repeat fixed;
   }
 
-  .theme_auto>.header>.decor__element {
-    display: none;
+  .theme_auto>.header>.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 }
